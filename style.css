@@ -1,0 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.TaskMenu{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.BtnTask{
+    width: 49%;
+    height: 100px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 40px white, 0px 0px 60px white, 0px 0px 80px white;
+}
+
+.BtnTask:hover{
+    background-color: white;
+    color: black;
+    text-shadow: 0px 0px 10px black, 0px 0px 20px black, 0px 0px 40px black, 0px 0px 60px black, 0px 0px 80px black;
+}
+
+.BtnTask:active{
+    color: white;
+}
+
+#MainVideo{
+    display: none;
+}
+
+#MainImage{
+    display: block;
+}
+
+.textTag{
+    color: gray;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.tag-image{
+    text-align: center;
+}
+
+.ImagePage{
+    width: 100%;
+}
+
+.SelectorPage{
+    text-align: center;
+}
+.SelectorPageTxt{
+    font-family: cursive;
+}
+
+#Page1{
+    display: block;
+}
+
+#Page2{
+    display: none;
+}
+
+#Page3{
+    display: none;
+    text-align: center;
+}
+
+#Page4{
+    display: none;
+}
+
+.Img{
+    width: 50%;
+    user-select: none;
+}
+
+.Video{
+    width: 25%;
+    user-select: none;
+}
+
+#Code-nav{
+    display: none;
+}
