@@ -93,3 +93,35 @@ html, body{
 #Code-nav{
     display: none;
 }
+
+.Btn-help-pav{
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px black, 0px 0px 20px black;
+    text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 40px white;
+}
+.Btn-help-pav:hover{
+    background-color: rgb(185, 185, 185);
+    color: black;
+    box-shadow: 0px 0px 10px rgb(185, 185, 185), 0px 0px 20px rgb(185, 185, 185);
+    text-shadow: 0px 0px 10px black, 0px 0px 20px black, 0px 0px 40px black;
+}
+.Btn-help-pav:active{
+    color: white;
+}
+
+.Help-pav{
+    display: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
