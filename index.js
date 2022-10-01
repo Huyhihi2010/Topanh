@@ -1,15 +1,26 @@
+//Check Main
+
 const YearEl = document.getElementById('YearEl');
 const Btn_Image = document.getElementById('Btn-Image');
 const Btn_Video = document.getElementById('Btn-Video');
 
+//Check Menu
+
 const MainImage = document.getElementById('MainImage');
 const MainVideo = document.getElementById('MainVideo');
 
+//Check Code
 const Code_nav = document.getElementById('Code-nav');
 const CheckPage_Input = document.getElementById('CheckPage-Input');
 const Code_Btn = document.getElementById('Code-Btn');
 
+//Check Help
+const Help_nav = document.getElementById('Help-nav');
+const Btn_help_nav = document.getElementById('Btn-help-nav');
+
 var UnLockPage4 = false;
+
+var helpOpen = false;
 
 var SidePage = [
     document.getElementById('Side1'),
@@ -130,6 +141,19 @@ SidePageV[3].addEventListener('click', () => {
     SelectionPageV[3] = true;
 })
 
+Btn_help_nav.addEventListener('click', () => {
+    if(helpOpen) {
+        helpOpen = false;
+    } else {
+        helpOpen = true;
+    }
+    if(helpOpen) {
+        Help_nav.style.display = 'block';
+    } else {
+        Help_nav.style.display = 'none';
+    }
+})
+
 Code_Btn.addEventListener('click', () => {
     if(CheckPage_Input.value != '') {
         if(CheckPage_Input.value == '7a2IsBest') {
@@ -139,7 +163,7 @@ Code_Btn.addEventListener('click', () => {
                 Code_nav.style.display = 'none';
             }, 5000)
         } else {
-            alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại`);
+            alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại hoặc lỗi chính tả`);
             alert(`Hãy hỏi |${AdminName}| Để Nhận Mã`);
         }
     } else {
