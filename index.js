@@ -155,19 +155,21 @@ Btn_help_nav.addEventListener('click', () => {
 })
 
 Code_Btn.addEventListener('click', () => {
-    if(CheckPage_Input.value != '') {
-        if(CheckPage_Input.value == '7a2IsBest') {
-            UnLockPage4 = true;
-            CheckPage_Input.value = 'Đã Xác Nhận';
-            setTimeout(() => {
-                Code_nav.style.display = 'none';
-            }, 5000)
+    if(!UnLockPage4) {
+        if(CheckPage_Input.value != '') {
+            if(CheckPage_Input.value == '7a2IsBest') {
+                UnLockPage4 = true;
+                CheckPage_Input.value = 'Đã Xác Nhận';
+                setTimeout(() => {
+                    Code_nav.style.display = 'none';
+                }, 5000)
+            } else {
+                alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại hoặc lỗi chính tả`);
+                alert(`Hãy hỏi |${AdminName}| Để Nhận Mã`);
+            }
         } else {
-            alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại hoặc lỗi chính tả`);
-            alert(`Hãy hỏi |${AdminName}| Để Nhận Mã`);
+            CheckPage_Input.value = 'Nhập Mã!';
         }
-    } else {
-        CheckPage_Input.value = 'Nhập Mã!';
     }
 })
 
