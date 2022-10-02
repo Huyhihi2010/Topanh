@@ -170,6 +170,8 @@ Code_Btn.addEventListener('click', () => {
         } else {
             CheckPage_Input.value = 'Nhập Mã!';
         }
+    } else {
+        alert('Mã đã được kích hoạt!')
     }
 })
 
