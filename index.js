@@ -110,6 +110,7 @@ SidePage[3].addEventListener('click', () => {
         SelectionPage[3] = true;
     } else {
         Code_nav.style.display = 'block';
+        alert('Kích hoạt mã trước!');
     }
 })
 
