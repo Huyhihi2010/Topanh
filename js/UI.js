@@ -5,11 +5,11 @@ var sock = {
     notify: function(type, title, text) {
         var Notify = document.createElement('div');
         Notify.id = type;
-        Notify.innerHTML = `<div><div id="title-s" class="Titles"><button id="gui-close" class="guiClose">x</button><span>${title}</span></div><hr><div><span class="textNoti">${text}</span></div></div>`;
-        Notify_nav.appendChild(Notify);
-        document.getElementById('gui-close').addEventListener('click', () => {
+        setTimeout(() => {
             Notify.remove();
-        })
+        }, 6000);
+        Notify.innerHTML = `<div><div id="title-s" class="Titles"><span>${title}</span></div><hr><div><span class="textNoti">${text}</span></div></div>`;
+        return Notify_nav.appendChild(Notify);
     },
     receive: function(type, text) {
         var Receive = document.createElement('div');
