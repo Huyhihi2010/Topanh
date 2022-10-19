@@ -58,6 +58,7 @@ html, body{
 
 .SelectorPage{
     text-align: center;
+    user-select: none;
 }
 .SelectorPageTxt{
     font-family: cursive;
@@ -77,6 +78,33 @@ html, body{
 }
 
 #Page4{
+    display: none;
+    text-align: center;
+}
+
+#Page5{
+    display: none;
+    text-align: center;
+}
+
+#Page6{
+    display: none;
+    text-align: center;
+}
+
+#Page7{
+    display: none;
+}
+
+#PageV2{
+    display: none;
+}
+
+#PageV3{
+    display: none;
+}
+
+#PageV4{
     display: none;
 }
 
@@ -124,4 +152,87 @@ html, body{
     width: 50%;
     border: 3px solid green;
     padding: 10px;
+}
+
+#ReceiveV{
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    animation-name: show;
+    user-select: none;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.m{
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    animation-name: hide;
+    animation-delay: 10s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+#notifyM{
+    top: auto;
+    right: 0px;
+    display: block;
+    position: fixed;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    animation-name: Notishow;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes Notishow{
+    0% {right: -1000px;}
+    100% {right: 0px;}
+}
+
+.Titles{
+    user-select: none;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textNoti{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.guiClose{
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.guiClose:hover{
+    background-color: rgb(255, 65, 65);
+}
+
+.guiClose:active{
+    background-color: rgb(255, 95, 95);
+}
+
+@keyframes hide{
+    0% {background-color: rgba(0, 0, 0, 0.438); color: white;}
+    100% {background-color: rgba(0, 0, 0, 0); color: rgba(255, 255, 255, 0);}
+}
+
+@keyframes show{
+    0% {top: -40px;}
+    100% {top: 5px;}
 }
