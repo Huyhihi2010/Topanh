@@ -179,6 +179,7 @@ html, body{
 }
 
 #notifyM{
+    border-radius: 10px;
     top: auto;
     right: 0px;
     display: block;
@@ -197,6 +198,7 @@ html, body{
 }
 
 .Titles{
+    text-align: center;
     user-select: none;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -206,25 +208,6 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: lighter;
-}
-
-.guiClose{
-    text-align: center;
-    border: 0px;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-}
-
-.guiClose:hover{
-    background-color: rgb(255, 65, 65);
-}
-
-.guiClose:active{
-    background-color: rgb(255, 95, 95);
 }
 
 @keyframes hide{
