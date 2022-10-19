@@ -223,7 +223,6 @@ Code_Btn.addEventListener('click', () => {
                     Code_nav.style.display = 'none';
                 }, 5000)
             } else {
-                sock.notify('notifyM', 'Mặt Khẩu', `Mật mã "${CheckPage_Input.value}" sai!`);
                 alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại hoặc lỗi chính tả`);
                 alert(`Hãy hỏi |${AdminName}| Để Nhận Mã`);
             }
@@ -349,5 +348,9 @@ function everySecond() {
         SidePageV[3].style.color = 'black';
     }
 }
+
+setInterval(() => {
+    sock.notify('notifyM', '🔰🔰 Đánh giá 🔰🔰', 'Bạn thấy như nào khi truy cập top ảnh?, bình luận trên zalo nhé!');
+}, 360000)
 
 everySecond();
