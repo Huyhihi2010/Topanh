@@ -167,7 +167,7 @@ SidePage[6].addEventListener('click', () => {
         SelectionPage[6] = true;
     } else {
         Code_nav.style.display = 'block';
-        sock.receive('m', 'Kích hoạt mã trước!');
+        sock.notify('notifyM', 'Kích hoạt', 'Kích hoạt mã trước!');
     }
 })
 
