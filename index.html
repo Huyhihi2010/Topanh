@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
     <body>
+        <div id="Receive-nav" class="ReceiveNav"></div>
+        <div id="Notify-nav" class="NotifyNav"></div>
         <div class="TaskMenu" id="Task-Menu">
             <button class="BtnTask" id="Btn-Image">Ảnh</button>
             <button class="BtnTask" id="Btn-Video">Video</button>
@@ -49,6 +51,15 @@
                 <span id="Pagerong" style="font-size: 20px; color: gray; font-family: cursive;">Page rỗng</span>
             </div>
             <div class="ImagePage" id="Page4">
+                <span id="Pagerong" style="font-size: 20px; color: gray; font-family: cursive;">Page rỗng</span>
+            </div>
+            <div class="ImagePage" id="Page5">
+                <span id="Pagerong" style="font-size: 20px; color: gray; font-family: cursive;">Page rỗng</span>
+            </div>
+            <div class="ImagePage" id="Page6">
+                <span id="Pagerong" style="font-size: 20px; color: gray; font-family: cursive;">Page rỗng</span>
+            </div>
+            <div class="ImagePage" id="Page7">
                 <!---->
                 <img class="Img" src="./img/4ae.png" width="250px"><img class="Img" id="Img2" src="./img/aothatday.png" width="250px">
                 <!---->
@@ -61,8 +72,11 @@
                 <button class="CheckPage" id="Side2">2</button>
                 <button class="CheckPage" id="Side3">3</button>
                 <button class="CheckPage" id="Side4">4</button>
+                <button class="CheckPage" id="Side5">5</button>
+                <button class="CheckPage" id="Side6">6</button>
+                <button class="CheckPage" id="Side7">7</button>
                 <br>
-                <br><div id="Code-nav"><form style="font-family: cursive;">Page 4 là Page Bí Mật!</form><input style="border: 2px solid black; border-radius: 10px; text-align: center" id="CheckPage-Input" type="text" maxlength="50" value="Nhập Mã Tại Đây"><br><button id="Code-Btn">Xác Nhận</button></div><br><br><br>
+                <br><div id="Code-nav"><form style="font-family: cursive;">Page 4 là Page Bí Mật!</form><input style="border: 2px solid black; border-radius: 10px; text-align: center" id="CheckPage-Input" type="text" maxlength="50" placeholder="Nhập mã tại đây"><br><button id="Code-Btn">Xác Nhận</button></div><br><br><br>
             </div>
         </div>
         <div class="MainMenu" id="MainVideo">
@@ -77,6 +91,13 @@
             </div><hr>
             <div class="ImageVideo" id="PageV1">
                 <video src="./video/Sus.mp4" controls class="Video"></video><video src="./video/6579934405430210973.mp4" controls class="Video"></video>
+                <video src="./video/3810104346575.mp4" controls class="Video"></video><video src="./video/3810104470758.mp4" controls class="Video"></video>
+            </div>
+            <div class="ImageVideo" id="PageV2">
+            </div>
+            <div class="ImageVideo" id="PageV3">
+            </div>
+            <div class="ImageVideo" id="PageV4">
             </div><hr>
             <div class="SelectorPage">
                 <span class="SelectorPageTxt">Chọn Page</span><br>
@@ -108,6 +129,7 @@
             <span class="txtHelpLeft">Học Trực Tiếp</span><br>
         </div><br>
         <button class="Btn-help-pav" id="Btn-help-nav">?</button>
-        <script src="./index.js" type="text/javascript"></script>
+        <script src="./js/UI.js" type="text/javascript"></script>
+        <script src="./js/index.js" type="text/javascript"></script>
     </body>
 </html>
