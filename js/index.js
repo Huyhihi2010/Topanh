@@ -223,9 +223,9 @@ Code_Btn.addEventListener('click', () => {
                     Code_nav.style.display = 'none';
                 }, 5000)
             } else {
+                sock.notify('notifyM', 'Mặt Khẩu', 'Mật mã sai!');
                 alert(`Mã |${CheckPage_Input.value}| Không Tồn Tại hoặc lỗi chính tả`);
                 alert(`Hãy hỏi |${AdminName}| Để Nhận Mã`);
-                sock.notify('notifyM', 'Mặt Khẩu', 'Mật mã sai!');
             }
         } else {
             sock.receive('m', 'Nhập Mã!');
