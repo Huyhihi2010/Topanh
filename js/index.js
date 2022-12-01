@@ -97,6 +97,7 @@ Btn_Video.addEventListener('click', () => {
 })
 
 SidePage[0].addEventListener('click', () => {
+    YearEl.innerHTML = '2021 - 2022';
     SelectionPage[0] = true;
     SelectionPage[1] = false;
     SelectionPage[2] = false;
@@ -107,6 +108,7 @@ SidePage[0].addEventListener('click', () => {
 })
 
 SidePage[1].addEventListener('click', () => {
+    YearEl.innerHTML = '2021 - 2022';
     SelectionPage[0] = false;
     SelectionPage[1] = true;
     SelectionPage[2] = false;
@@ -117,6 +119,7 @@ SidePage[1].addEventListener('click', () => {
 })
 
 SidePage[2].addEventListener('click', () => {
+    YearEl.innerHTML = '2022 - 2023';
     SelectionPage[0] = false;
     SelectionPage[1] = false;
     SelectionPage[2] = true;
@@ -127,6 +130,7 @@ SidePage[2].addEventListener('click', () => {
 })
 
 SidePage[3].addEventListener('click', () => {
+    YearEl.innerHTML = '2021 - 2022';
     SelectionPage[0] = false;
     SelectionPage[1] = false;
     SelectionPage[2] = false;
@@ -137,6 +141,7 @@ SidePage[3].addEventListener('click', () => {
 })
 
 SidePage[4].addEventListener('click', () => {
+    YearEl.innerHTML = '2021 - 2022';
     SelectionPage[0] = false;
     SelectionPage[1] = false;
     SelectionPage[2] = false;
@@ -147,6 +152,7 @@ SidePage[4].addEventListener('click', () => {
 })
 
 SidePage[5].addEventListener('click', () => {
+    YearEl.innerHTML = '2021 - 2022';
     SelectionPage[0] = false;
     SelectionPage[1] = false;
     SelectionPage[2] = false;
@@ -158,6 +164,7 @@ SidePage[5].addEventListener('click', () => {
 
 SidePage[6].addEventListener('click', () => {
     if(UnLockPage4) {
+        YearEl.innerHTML = '2021 - 2022';
         SelectionPage[0] = false;
         SelectionPage[1] = false;
         SelectionPage[2] = false;
@@ -351,6 +358,6 @@ function everySecond() {
 
 setInterval(() => {
     sock.notify('notifyM', '🔰🔰 Đánh giá 🔰🔰', 'Bạn thấy như nào khi truy cập top ảnh?, bình luận trên zalo nhé!');
-}, 360000)
+}, 7000)
 
 everySecond();
